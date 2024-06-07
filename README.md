@@ -7,8 +7,6 @@ This is the repository for my personal website, created in June 2024. The websit
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
 
 ## File Structure
 ```
@@ -59,14 +57,6 @@ To run this project locally, follow these steps:
   ```bash
   npm start
   ```
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 <br>
 <br>
 <br>
