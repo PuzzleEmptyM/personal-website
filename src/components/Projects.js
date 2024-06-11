@@ -2,10 +2,10 @@ import React from 'react';
 import useIntersectionObserver from '../hooks/useIntersectionObserver';
 
 const Projects = () => {
-  const [ref, isVisible] = useIntersectionObserver({ threshold: 0.1 });
+  const [ref] = useIntersectionObserver({ threshold: 0.1 });
 
   return (
-    <section id="projects" ref={ref} className={isVisible ? 'section-visible' : ''}>
+    <section id="projects" ref={ref}>
       <h2>Projects</h2>
       <div className="projects-grid">
         <div className="project">
