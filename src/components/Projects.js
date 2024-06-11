@@ -7,6 +7,7 @@ const Projects = () => {
   return (
     <section id="projects" ref={ref}>
       <h2>Projects</h2>
+      <br></br>
       <div className="projects-grid">
         <div className="project">
           <img src={`${process.env.PUBLIC_URL}/images/project1.jpg`} alt="Project One" />
@@ -23,7 +24,21 @@ const Projects = () => {
           <h3>Project Three</h3>
           <p>Description of project three. This project is a game developed using Unity, featuring challenging puzzles and a captivating storyline.</p>
         </div>
-        {/* Add more projects as needed */}
+        <div className="project">
+          <img src={`${process.env.PUBLIC_URL}/images/project3.jpg`} alt="Project Three" />
+          <h3>Project Three</h3>
+          <p>Description of project three. This project is a game developed using Unity, featuring challenging puzzles and a captivating storyline.</p>
+        </div>
+        <div className="project">
+          <img src={`${process.env.PUBLIC_URL}/images/project3.jpg`} alt="Project Three" />
+          <h3>Project Three</h3>
+          <p>Description of project three. This project is a game developed using Unity, featuring challenging puzzles and a captivating storyline.</p>
+        </div>
+        <div className="project">
+          <img src={`${process.env.PUBLIC_URL}/images/project3.jpg`} alt="Project Three" />
+          <h3>Project Three</h3>
+          <p>Description of project three. This project is a game developed using Unity, featuring challenging puzzles and a captivating storyline.</p>
+        </div>
       </div>
     </section>
   );
