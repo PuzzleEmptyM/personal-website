@@ -8,20 +8,23 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  body {
+  body, html {
+    height: 100%;
+    margin: 0;
     font-family: 'Roboto', sans-serif;
     background: #0f0f0f;
     color: #ffffff;
-    font-size: 1.5rem; /* Adjust base font size */
   }
 
   .container {
-    overflow-y: scroll; /* Allow vertical scrolling */
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Allow vertical scrolling */
   }
 
   header {
     background: #1a1a1a;
-    padding: 10px 20px; /* Adjusted padding */
+    padding: 20px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -38,6 +41,8 @@ const GlobalStyle = createGlobalStyle`
       list-style: none;
       display: flex;
       justify-content: space-around;
+      padding: 0;
+      margin: 0;
     }
 
     nav ul li {
@@ -58,11 +63,20 @@ const GlobalStyle = createGlobalStyle`
   }
 
   section {
-    padding: 60px 20px 0; /* Adjusted top padding to avoid clipping */
-    min-height: calc(100vh - 60px); /* Ensure sections take full viewport height minus header height */
+    padding: 60px 20px 20px; /* Adjusted top padding */
+    height: auto; /* Auto height for sections */
+    width: 100%; /* Ensure sections take full width */
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 0 auto 40px; /* Bottom margin for spacing between sections */
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center align all content */
+  }
+
+  #about {
+    margin-top: 80px; /* Ensure the "About Me" section clears the header */
   }
 
   .profile-container {
@@ -89,16 +103,22 @@ const GlobalStyle = createGlobalStyle`
     border-bottom: 2px solid #00e5ff;
     padding-bottom: 10px;
     font-size: 2.5rem; /* Adjusted heading size */
+    width: 100%; /* Ensure headings take full width */
+    max-width: 1000px; /* Ensure headings are aligned */
   }
 
   p {
     font-size: 1.5rem; /* Adjusted paragraph size */
+    width: 100%; /* Ensure paragraphs take full width */
+    max-width: 1000px; /* Ensure paragraphs are aligned */
   }
 
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    width: 100%; /* Ensure grid takes full width */
+    max-width: 1000px; /* Ensure grid is aligned */
   }
 
   .project {
@@ -147,6 +167,8 @@ const GlobalStyle = createGlobalStyle`
   ul {
     list-style: none;
     font-size: 1.5rem; /* Adjusted list item size */
+    width: 100%; /* Ensure list takes full width */
+    max-width: 1000px; /* Ensure list is aligned */
   }
 
   ul li {
@@ -168,6 +190,8 @@ const GlobalStyle = createGlobalStyle`
     flex-direction: column;
     gap: 15px;
     font-size: 1.5rem; /* Adjusted form text size */
+    width: 100%; /* Ensure form takes full width */
+    max-width: 1000px; /* Ensure form is aligned */
   }
 
   .form-group {
