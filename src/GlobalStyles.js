@@ -1,29 +1,32 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
+  /* CSS Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
   body {
     font-family: 'Roboto', sans-serif;
     background: #0f0f0f;
     color: #ffffff;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 1.5rem; /* Reduced base font size */
+    font-size: 1.5rem; /* Adjust base font size */
   }
 
   .container {
-    height: 100vh;
-    scroll-snap-type: y mandatory; /* Enable vertical scroll snapping */
     overflow-y: scroll; /* Allow vertical scrolling */
   }
 
   header {
     background: #1a1a1a;
-    padding: 20px;
+    padding: 10px 20px; /* Adjusted padding */
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
+    height: 60px; /* Fixed header height */
 
     nav {
       max-width: 1000px;
@@ -35,8 +38,6 @@ const GlobalStyle = createGlobalStyle`
       list-style: none;
       display: flex;
       justify-content: space-around;
-      padding: 0;
-      margin: 0;
     }
 
     nav ul li {
@@ -57,20 +58,11 @@ const GlobalStyle = createGlobalStyle`
   }
 
   section {
-    padding: 10px 0; /* Further reduced padding */
-    height: 60vh; /* Set fixed height */
+    padding: 60px 20px 0; /* Adjusted top padding to avoid clipping */
+    min-height: calc(100vh - 60px); /* Ensure sections take full viewport height minus header height */
     max-width: 1000px;
     margin: 0 auto;
     position: relative;
-    opacity: 0;
-    transform: translateY(20px); /* Reduced transform distance */
-    transition: opacity 1.5s ease-out, transform 1.5s ease-out; /* Increased duration */
-    scroll-snap-align: start; /* Snap to the start of the section */
-  }
-
-  .section-visible {
-    opacity: 1;
-    transform: translateY(0);
   }
 
   .profile-container {
@@ -96,8 +88,6 @@ const GlobalStyle = createGlobalStyle`
   h2 {
     border-bottom: 2px solid #00e5ff;
     padding-bottom: 10px;
-    margin-bottom: 20px;
-    margin-top: 0; /* Removed top margin */
     font-size: 2.5rem; /* Adjusted heading size */
   }
 
@@ -120,6 +110,8 @@ const GlobalStyle = createGlobalStyle`
     border-radius: 10px;
     box-shadow: 0 0 10px #00e5ff;
     transition: box-shadow 0.3s;
+    position: relative; /* Added for image positioning */
+    overflow: hidden; /* Hide overflowing content */
   }
 
   .project:hover {
@@ -130,23 +122,30 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
     height: auto;
     border-radius: 10px;
-    margin-bottom: 10px;
+    opacity: 0; /* Hide image initially */
+    transition: opacity 0.3s ease-in-out;
+    position: absolute; /* Position image absolutely */
+    top: 0;
+    left: 0;
+  }
+
+  .project:hover img {
+    opacity: 1; /* Show image on hover */
   }
 
   .project h3 {
-    margin-bottom: 10px;
     font-size: 2rem; /* Adjust font size for project titles */
+    z-index: 1; /* Ensure text is above image */
   }
 
   .project p {
-    margin: 0;
     font-size: 1.25rem; /* Adjusted paragraph size */
     text-align: center;
+    z-index: 1; /* Ensure text is above image */
   }
 
   ul {
     list-style: none;
-    padding: 0;
     font-size: 1.5rem; /* Adjusted list item size */
   }
 
