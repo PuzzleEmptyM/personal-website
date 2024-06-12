@@ -8,15 +8,30 @@ const Resume = () => {
     <section id="resume" ref={ref} className={isVisible ? 'section-visible' : ''}>
       <h2>Resume</h2>
       <p>Download my <a href="path/to/your/resume.pdf" target="_blank" rel="noopener noreferrer">resume</a>.</p>
+      <br></br>
+      <br></br>
       <h3>Education</h3>
-      <p><strong>Full-Stack Engineering Student</strong></p>
-      <p>XYZ University, 2022 - Present</p>
+      <p><strong>Degree in Computer Science and Full Stack Development</strong></p>
+      <p>Atlas School, May 2023 - Dec 2024</p>
+      <br></br>
+      <br></br>
+      <br></br>
       <h3>Experience</h3>
-      <p><strong>Software Engineering Intern</strong></p>
-      <p>ABC Company, Summer 2023</p>
-      <p>Worked on developing and maintaining web applications, collaborating with senior developers, and participating in code reviews.</p>
-      <h3>Certifications</h3>
-      <p>Certified JavaScript Developer</p>
+      <p><strong>Marketing Manager</strong></p>
+      <p>Samuel Claus, Jan 2021 - Present</p>
+      <br></br>
+      <p>Manager, Marketer and Designer of samuelclaus.com. Job consists in contacting potential customers, reaching out to local art events, constantly updating the website, accompanying Samuel at every art event to help manage sales, and strategizing for constant improvement of our services.</p>
+      <br></br>
+      <p><strong>Coder - AI Training</strong></p>
+      <p>Scale AI, Jan 2024 - Present</p>
+      <br></br>
+      <p>
+        - Evaluating the quality of AI-generated code.<br></br>
+        - Writing functional and efficient code.<br></br>
+        - Optimizing code to run at maximum efficiency.<br></br>
+        - Writing robust test cases to confirm code works efficiently.<br></br>
+        - Writing human-readable summaries of coding problems.<br></br>
+        - Writing explanations of how code can solve problems.</p>
     </section>
   );
 };
