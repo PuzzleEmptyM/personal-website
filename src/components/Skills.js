@@ -7,6 +7,7 @@ const Skills = () => {
   return (
     <section id="skills" ref={ref} className={isVisible ? 'section-visible' : ''}>
       <h2>Skills</h2>
+      <br></br>
       <ul>
         <li>JavaScript (ES6+)</li>
         <li>React</li>
