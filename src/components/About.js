@@ -6,9 +6,6 @@ const About = () => {
 
   return (
     <section id="about" ref={ref} className={isVisible ? 'section-visible' : ''}>
-      <div className="profile-container">
-        <img src={`${process.env.PUBLIC_URL}/images/puzzle_profile.jpg`} alt="Profile" className="profile-picture" />
-      </div>
       <h2>About Me</h2>
       <br></br>
       <p>My name is Michael Moser but everyone knows me as Puzzle</p>
