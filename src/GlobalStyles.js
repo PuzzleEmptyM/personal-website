@@ -1,27 +1,19 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background: #0f0f0f;
+    color: #ffffff;
+  }
+
   /* CSS Reset */
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-
-  body, html {
-    height: 100%;
-    margin: 0;
-    font-family: 'Quicksand', sans-serif;
-    background: #0f0f0f;
-    color: #ffffff;
-  }
-
-  body, html {
-    height: 100%;
-    margin: 0;
-    font-family: 'Quicksand', sans-serif;
-    background: #0f0f0f;
-    color: #ffffff;
   }
 
   .container {
@@ -87,7 +79,7 @@ const GlobalStyle = createGlobalStyle`
     margin-top: 80px; /* Ensure the "Home" section clears the header */
     text-align: center; /* Center align text */
     padding: 100px 20px; /* Increase padding for larger section */
-    height: calc(100vh - 80px); /* Make it almost full screen, considering the header height */
+    height: 1200px; /* Fixed height */
   }
 
   .profile-container {
@@ -239,13 +231,64 @@ const GlobalStyle = createGlobalStyle`
     color: #ff00e5;
   }
 
+  .contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .contact-info h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+
+  .contact-info p {
+    font-size: 1.5rem;
+    color: #a9a9a9;
+    margin-bottom: 20px;
+  }
+
+  .contact-info a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #00e5ff;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+
+  .contact-info a:hover {
+    color: #ff00e5;
+  }
+
+  .contact-info svg {
+    margin-right: 10px;
+  }
+
   .contact-form {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    font-size: 2rem; /* Adjusted form text size */
-    width: 100%; /* Ensure form takes full width */
-    max-width: 1500px; /* Increased width */
+    font-size: 1.5rem;
+    width: 100%;
+    max-width: 600px;
+    padding: 25px;
+    background: #1a1a1a;
+    border-radius: 10px;
   }
 
   .form-group {
@@ -271,19 +314,30 @@ const GlobalStyle = createGlobalStyle`
     min-height: 100px;
   }
 
+  .social-links a {
+  margin-right: 10px;
+  font-size: 3em; /* Increase the font size for larger icons */
+  transition: transform 0.3s;
+}
+
+.social-links a:hover {
+  transform: scale(1.2); /* Slightly enlarge the icons on hover */
+}
+
+
   button {
     padding: 15px 30px;
     border: none;
     border-radius: 5px;
-    background: #00e5ff;
+    background: linear-gradient(90deg, #00e5ff, #ff00e5);
     color: #0f0f0f;
     cursor: pointer;
     transition: background 0.3s;
-    font-size: 2rem; /* Adjusted button text size */
+    font-size: 1.5rem;
   }
 
   button:hover {
-    background: #ff00e5;
+    background: linear-gradient(90deg, #ff00e5, #00e5ff);
   }
 `;
 
