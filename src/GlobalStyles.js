@@ -138,9 +138,8 @@ const GlobalStyle = createGlobalStyle`
     background: #1a1a1a;
     padding: 20px;
     text-align: center;
-    font-size: 1.5rem; /* Adjust font size for footer */
+    font-size: 1rem; /* Adjust font size for footer */
     width: 100%; /* Ensure footer takes full width */
-    max-width: 1500px; /* Increased width */
     margin: 0 auto; /* Center footer within the page */
   }
 
@@ -148,8 +147,6 @@ const GlobalStyle = createGlobalStyle`
     border-bottom: 2px solid #00e5ff;
     padding-bottom: 10px;
     font-size: 3rem; /* Adjusted heading size */
-    width: 100%; /* Ensure headings take full width */
-    max-width: 1500px; /* Increased width */
   }
 
   p {
