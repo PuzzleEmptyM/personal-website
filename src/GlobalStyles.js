@@ -29,10 +29,9 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
     top: 0;
     z-index: 1000;
-    height: 60px;
 
     nav {
-      max-width: 1500px; /* Increased width */
+      max-width: 900px; /* Increased width */
       margin: 0 auto;
       padding: 0 20px;
     }
@@ -41,7 +40,7 @@ const GlobalStyle = createGlobalStyle`
       list-style: none;
       display: flex;
       justify-content: space-around;
-      padding: 0;
+      padding: 10;
       margin: 0;
     }
 
