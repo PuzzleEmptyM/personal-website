@@ -10,15 +10,16 @@ const Skills = () => {
       <br></br>
       <ul>
         <li>JavaScript (ES6+)</li>
-        <li>React</li>
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>MongoDB</li>
         <li>HTML & CSS</li>
+        <li>Bootstrap (Responsive Web Design)</li>
         <li>Git & GitHub</li>
-        <li>Responsive Web Design</li>
-        <li>Problem Solving</li>
-        <li>Team Collaboration</li>
+        <li>Python</li>
+        <li>SQL</li>
+        <li>MySQL</li>
+        <li>NoSQL</li>
+        <li>Node.js</li>
+        <li>MongoDB</li>
+        <li>React</li>
       </ul>
     </section>
   );
