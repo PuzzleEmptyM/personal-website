@@ -23,7 +23,7 @@ const Contact = () => (
           <a href="https://www.linkedin.com/in/puzzlemoser/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin />
           </a>
-          <a href="https://www.linkedin.com/in/puzzlemoser/" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/PuzzleEmptyM" target="_blank" rel="noopener noreferrer">
             <FaGithub />
           </a>
         </div>
