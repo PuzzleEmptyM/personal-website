@@ -10,34 +10,24 @@ const Projects = () => {
       <br></br>
       <div className="projects-grid">
         <div className="project">
-          <img src={`${process.env.PUBLIC_URL}/images/project1.jpg`} alt="Project One" />
-          <h3>Project One</h3>
-          <p>Description of project one. This project involves creating a web application that helps users manage their tasks efficiently.</p>
+          <img src={`${process.env.PUBLIC_URL}/images/samuelclaus.png`} alt="Project One" />
+          <h3>SamuelClaus.com</h3>
+          <p>Website for Samuel Claus greeting cards and live caricatures. Customers can browse his portfolio and contact him through a secure contact method.</p>
         </div>
         <div className="project">
-          <img src={`${process.env.PUBLIC_URL}/images/project2.jpg`} alt="Project Two" />
-          <h3>Project Two</h3>
-          <p>Description of project two. This project is a mobile app that tracks daily habits and provides insights to help improve productivity.</p>
+          <img src={`${process.env.PUBLIC_URL}/images/plantclicker.png`} alt="Project Two" />
+          <h3>Plant Clicker</h3>
+          <p>Plant Clicker is an engaging clicker game where players cultivate a virtual garden. The game blends simple click mechanics with complex strategy elements, allowing players to experience the joys of gardening and plant evolution.</p>
         </div>
         <div className="project">
-          <img src={`${process.env.PUBLIC_URL}/images/project3.jpg`} alt="Project Three" />
-          <h3>Project Three</h3>
-          <p>Description of project three. This project is a game developed using Unity, featuring challenging puzzles and a captivating storyline.</p>
+          <img src={`${process.env.PUBLIC_URL}/images/presentpopper.png`} alt="Project Three" />
+          <h3>Present Popper</h3>
+          <p>This was our final one-week project for Trimester 2 at Atlas School. The goal of Present Popper was to create an immersive gaming experience, focusing on fun gameplay mechanics, interactive elements, and a compelling story premise.</p>
         </div>
         <div className="project">
-          <img src={`${process.env.PUBLIC_URL}/images/project3.jpg`} alt="Project Three" />
-          <h3>Project Three</h3>
-          <p>Description of project three. This project is a game developed using Unity, featuring challenging puzzles and a captivating storyline.</p>
-        </div>
-        <div className="project">
-          <img src={`${process.env.PUBLIC_URL}/images/project3.jpg`} alt="Project Three" />
-          <h3>Project Three</h3>
-          <p>Description of project three. This project is a game developed using Unity, featuring challenging puzzles and a captivating storyline.</p>
-        </div>
-        <div className="project">
-          <img src={`${process.env.PUBLIC_URL}/images/project3.jpg`} alt="Project Three" />
-          <h3>Project Three</h3>
-          <p>Description of project three. This project is a game developed using Unity, featuring challenging puzzles and a captivating storyline.</p>
+          <img src={`${process.env.PUBLIC_URL}/images/smiling.png`} alt="Project Three" />
+          <h3>Atlas Smiling School</h3>
+          <p>These group of web pages were coded with the help of the Boostrap Framework and based on some design models given on Figma.</p>
         </div>
       </div>
     </section>

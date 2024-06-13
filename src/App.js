@@ -8,6 +8,7 @@ import Resume from './components/Resume';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import GlobalStyle from './GlobalStyles';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => (
   <div>
