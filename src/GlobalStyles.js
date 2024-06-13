@@ -19,7 +19,7 @@ const GlobalStyle = createGlobalStyle`
   .container {
     display: flex;
     flex-direction: column;
-    overflow-y: auto; /* Allow vertical scrolling */
+    overflow-y: auto;
   }
 
   header {
@@ -29,7 +29,7 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
     top: 0;
     z-index: 1000;
-    height: 60px; /* Fixed header height */
+    height: 60px;
 
     nav {
       max-width: 1500px; /* Increased width */
