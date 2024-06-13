@@ -10,13 +10,7 @@ const Resume = () => {
       <p>Download my <a href="https://drive.google.com/file/d/1uNOkZ38bVmLfLHxaXmfSNk9lKUFwBKHp/view?usp=drive_link" target="_blank" rel="noopener noreferrer">resume</a>.</p>
       <br></br>
       <br></br>
-      <h3>Education</h3>
-      <p><strong>Degree in Computer Science and Full Stack Development</strong></p>
-      <p>Atlas School, May 2023 - Dec 2024</p>
-      <br></br>
-      <br></br>
-      <br></br>
-      <h3>Experience</h3>
+
       <p><strong>Marketing Manager</strong></p>
       <p>Samuel Claus, Jan 2021 - Present</p>
       <br></br>
