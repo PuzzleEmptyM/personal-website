@@ -164,16 +164,17 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .project {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
     background: #1a1a1a;
     border-radius: 10px;
     box-shadow: 0 0 10px #00e5ff;
     transition: box-shadow 0.3s;
-    position: relative; /* Added for image positioning */
-    overflow: hidden; /* Hide overflowing content */
+    overflow: hidden;
+    position: relative;
+    aspect-ratio: 16 / 9; /* Maintain consistent aspect ratio */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .project:hover {
@@ -182,29 +183,98 @@ const GlobalStyle = createGlobalStyle`
 
   .project img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover; /* Ensure images scale properly without stretching */
     border-radius: 10px;
-    opacity: 0; /* Hide image initially */
+    opacity: 0;
     transition: opacity 0.3s ease-in-out;
-    position: absolute; /* Position image absolutely */
+    position: absolute;
     top: 0;
     left: 0;
   }
 
   .project:hover img {
-    opacity: 1; /* Show image on hover */
+    opacity: .75; /* Show image on hover */
   }
 
   .project h3 {
-    font-size: 2rem; /* Adjust font size for project titles */
-    z-index: 1; /* Ensure text is above image */
+    font-size: 2rem;
+    text-align: center;
+    z-index: 1;
+    transition: opacity 0.3s ease-in-out;
   }
 
   .project p {
-    font-size: 1.5rem; /* Adjusted paragraph size */
+    font-size: 1.5rem;
     text-align: center;
-    z-index: 1; /* Ensure text is above image */
+    z-index: 1;
+    transition: opacity 0.3s ease-in-out;
   }
+
+  .project:hover h3, .project:hover p {
+  opacity: 0; /* Make text invisible */
+  transition: opacity 0.7s ease-in-out; /* Smooth transition */
+}
+
+  @media (max-width: 1200px) { /* Medium-large screens (e.g., laptops or large tablets) */
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+    .project h3 {
+    font-size: 1.25rem; /* Slightly smaller for medium-large screens */
+  }
+  .project p {
+    font-size: .75rem; /* Adjust paragraph size */
+  }
+}
+
+  @media (max-width: 768px) { /* Medium screens (tablets and small devices) */
+  .projects-grid {
+    grid-template-columns: 1fr; /* One column */
+  }
+  .project h3 {
+    font-size: 1.75rem; /* Slightly smaller for medium-large screens */
+  }
+  .project p {
+    font-size: 1.25rem; /* Adjust paragraph size */
+  }
+}
+
+@media (max-width: 480px) { /* Small screens (phones) */
+  .projects-grid {
+    grid-template-columns: 1fr; /* Still one column */
+  }
+  .project h3 {
+    font-size: 1.25rem; /* Slightly smaller for medium-large screens */
+  }
+  .project p {
+    font-size: 1rem; /* Adjust paragraph size */
+  }
+}
+
+@media (max-width: 400px) { /* Small screens (phones) */
+  .projects-grid {
+    grid-template-columns: 1fr; /* Still one column */
+  }
+  .project h3 {
+    font-size: 1rem; /* Slightly smaller for medium-large screens */
+  }
+  .project p {
+    font-size: .75rem; /* Adjust paragraph size */
+  }
+}
+
+@media (max-width: 400px) { /* Small screens (phones) */
+  .projects-grid {
+    grid-template-columns: 1fr; /* Still one column */
+  }
+  .project h3 {
+    font-size: .75rem; /* Slightly smaller for medium-large screens */
+  }
+  .project p {
+    font-size: .50rem; /* Adjust paragraph size */
+  }
+}
 
   ul {
     list-style: none;
