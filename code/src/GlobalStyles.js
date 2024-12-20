@@ -88,37 +88,37 @@ const GlobalStyle = createGlobalStyle`
   @media (max-width: 768px) {
     header nav {
       .menu-toggle {
-        display: block; /* Show the menu toggle button on smaller screens */
+        display: block;
       }
 
       ul {
-        display: none; /* Hide the navigation links initially */
+        display: none;
 
         &.open {
-          display: flex; /* Show links when menu is open */
+          display: flex;
         }
       }
     }
   }
 
   section {
-    padding: 60px 20px 20px; /* Adjusted top padding */
-    height: auto; /* Auto height for sections */
-    width: 100%; /* Ensure sections take full width */
-    max-width: 1500px; /* Increased width */
-    margin: 0 auto 40px; /* Bottom margin for spacing between sections */
+    padding: 60px 20px 20px;
+    height: auto;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto 40px;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* Center align all content */
+    align-items: center;
   }
 
   #home {
-    margin-top: 80px; /* Ensure the "Home" section clears the header */
-    text-align: center; /* Center align text */
-    padding: 100px 20px; /* Increase padding for larger section */
-    height: 1200px; /* Fixed height */
+    margin-top: 80px;
+    text-align: center;
+    padding: 100px 20px;
+    height: auto
   }
 
   .profile-container {
@@ -127,8 +127,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .profile-picture {
-    width: 450px;  /* Updated size */
-    height: 450px;  /* Updated size */
+    width: 450px;
+    height: 450px;
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid #00e5ff;
@@ -136,19 +136,19 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .home-heading {
-    font-size: 4rem; /* Larger heading */
+    font-size: 4rem;
     margin-bottom: 20px;
     color: #ffffff;
   }
 
   .home-subheading {
-    font-size: 2.5rem; /* Larger subheading */
+    font-size: 2.5rem;
     margin-bottom: 20px;
     color: #ffffff;
   }
 
   .home-description {
-    font-size: 2rem; /* Larger description */
+    font-size: 2rem;
     margin-bottom: 40px;
     color: #a9a9a9;
   }
@@ -174,33 +174,94 @@ const GlobalStyle = createGlobalStyle`
     background: linear-gradient(90deg, #ff00e5, #00e5ff);
   }
 
+  @media (max-width: 1024px) {
+    #home {
+      padding: 80px 15px; 
+    }
+
+    .profile-picture {
+      width: 350px; 
+      height: 350px;
+    }
+
+    .home-heading {
+      font-size: 3rem; 
+    }
+
+    .home-subheading {
+      font-size: 2rem; 
+    }
+
+    .home-description {
+      font-size: 1.5rem; 
+    }
+
+    .home-buttons button {
+      font-size: 1.3rem;
+      padding: 12px 25px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    #home {
+      padding: 60px 10px;
+    }
+
+    .profile-picture {
+      width: 250px;
+      height: 250px;
+    }
+
+    .home-heading {
+      font-size: 2.5rem;
+    }
+
+    .home-subheading {
+      font-size: 1.8rem;
+    }
+
+    .home-description {
+      font-size: 1.2rem;
+    }
+
+    .home-buttons {
+      flex-direction: wrap;
+      gap: 10px;
+    }
+
+    .home-buttons button {
+      font-size: 1.2rem;
+      padding: 10px 20px;
+    }
+  }
+
   footer {
     background: #1a1a1a;
     padding: 20px;
     text-align: center;
-    font-size: 1rem; /* Adjust font size for footer */
-    width: 100%; /* Ensure footer takes full width */
-    margin: 0 auto; /* Center footer within the page */
+    font-size: 1rem;
+    width: 100%;
+    margin: 0 auto;
   }
 
   h2 {
     border-bottom: 2px solid #00e5ff;
     padding-bottom: 10px;
-    font-size: 3rem; /* Adjusted heading size */
+    font-size: 3rem;
   }
 
   p {
-    font-size: 2rem; /* Adjusted paragraph size */
-    width: 100%; /* Ensure paragraphs take full width */
-    max-width: 1500px; /* Increased width */
+    font-size: 2rem;
+    width: 100%;
+    max-width: 1500px;
   }
 
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    width: 100%; /* Ensure grid takes full width */
-    max-width: 1500px; /* Increased width */
+    width: 100%;
+    max-width: 1500px;
   }
 
   .project {
@@ -210,7 +271,7 @@ const GlobalStyle = createGlobalStyle`
     transition: box-shadow 0.3s;
     overflow: hidden;
     position: relative;
-    aspect-ratio: 16 / 9; /* Maintain consistent aspect ratio */
+    aspect-ratio: 16 / 9; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -224,7 +285,7 @@ const GlobalStyle = createGlobalStyle`
   .project img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure images scale properly without stretching */
+    object-fit: cover; 
     border-radius: 10px;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
@@ -234,7 +295,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .project:hover img {
-    opacity: .75; /* Show image on hover */
+    opacity: .75; 
   }
 
   .project h3 {
@@ -252,75 +313,75 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .project:hover h3, .project:hover p {
-  opacity: 0; /* Make text invisible */
-  transition: opacity 0.7s ease-in-out; /* Smooth transition */
+  opacity: 0; 
+  transition: opacity 0.7s ease-in-out; 
 }
 
-  @media (max-width: 1200px) { /* Medium-large screens (e.g., laptops or large tablets) */
+  @media (max-width: 1200px) { 
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
   }
     .project h3 {
-    font-size: 1.25rem; /* Slightly smaller for medium-large screens */
+    font-size: 1.25rem; 
   }
   .project p {
-    font-size: .75rem; /* Adjust paragraph size */
+    font-size: .75rem; 
   }
 }
 
-  @media (max-width: 768px) { /* Medium screens (tablets and small devices) */
+  @media (max-width: 768px) { 
   .projects-grid {
-    grid-template-columns: 1fr; /* One column */
+    grid-template-columns: 1fr; 
   }
   .project h3 {
-    font-size: 1.75rem; /* Slightly smaller for medium-large screens */
+    font-size: 1.75rem; 
   }
   .project p {
-    font-size: 1.25rem; /* Adjust paragraph size */
+    font-size: 1.25rem; 
   }
 }
 
-@media (max-width: 480px) { /* Small screens (phones) */
+@media (max-width: 480px) { 
   .projects-grid {
-    grid-template-columns: 1fr; /* Still one column */
+    grid-template-columns: 1fr; 
   }
   .project h3 {
-    font-size: 1.25rem; /* Slightly smaller for medium-large screens */
+    font-size: 1.25rem; 
   }
   .project p {
-    font-size: 1rem; /* Adjust paragraph size */
+    font-size: 1rem; 
   }
 }
 
-@media (max-width: 400px) { /* Small screens (phones) */
+@media (max-width: 400px) { 
   .projects-grid {
-    grid-template-columns: 1fr; /* Still one column */
+    grid-template-columns: 1fr; 
   }
   .project h3 {
-    font-size: 1rem; /* Slightly smaller for medium-large screens */
+    font-size: 1rem; 
   }
   .project p {
-    font-size: .75rem; /* Adjust paragraph size */
+    font-size: .75rem; 
   }
 }
 
-@media (max-width: 400px) { /* Small screens (phones) */
+@media (max-width: 400px) { 
   .projects-grid {
-    grid-template-columns: 1fr; /* Still one column */
+    grid-template-columns: 1fr; 
   }
   .project h3 {
-    font-size: .75rem; /* Slightly smaller for medium-large screens */
+    font-size: .75rem; 
   }
   .project p {
-    font-size: .50rem; /* Adjust paragraph size */
+    font-size: .50rem; 
   }
 }
 
   ul {
     list-style: none;
-    font-size: 2rem; /* Adjusted list item size */
-    width: 100%; /* Ensure list takes full width */
-    max-width: 1500px; /* Increased width */
+    font-size: 2rem;
+    width: 100%; 
+    max-width: 1500px; 
   }
 
   ul li {
@@ -329,7 +390,7 @@ const GlobalStyle = createGlobalStyle`
 
   a {
     color: #00e5ff;
-    font-size: 2rem; /* Adjusted link size */
+    font-size: 2rem; 
   }
 
   a:hover {
@@ -422,12 +483,12 @@ const GlobalStyle = createGlobalStyle`
 
   .social-links a {
   margin-right: 10px;
-  font-size: 3em; /* Increase the font size for larger icons */
+  font-size: 3em; 
   transition: transform 0.3s;
 }
 
 .social-links a:hover {
-  transform: scale(1.2); /* Slightly enlarge the icons on hover */
+  transform: scale(1.2); 
 }
 
 
