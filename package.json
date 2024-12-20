@@ -1,9 +1,12 @@
 {
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
-    "emailjs-com": "^3.2.0"
+    "emailjs-com": "^3.2.0",
+    "swiper": "^11.1.15"
   },
   "devDependencies": {
-    "gh-pages": "^6.2.0"
+    "autoprefixer": "^10.4.20",
+    "gh-pages": "^6.2.0",
+    "postcss": "^8.4.49"
   }
 }

@@ -12,7 +12,7 @@ const Projects = () => {
         <div className="project" onClick={() => window.open('https://vital-bite-pi.vercel.app/')}>
           <img src={`${process.env.PUBLIC_URL}/images/vitalbite.png`} alt="Project One" />
           <h3>Vital Bite</h3>
-          <p>"Simple food guidance for complex needs." A full stack react app created to help people navigate their diets. Includes am ai chatbot that creates custom recipes catered to your needs. This was my capstone project at Atlas School.</p>
+          <p>"Simple food guidance for complex needs." A full stack react app created to help people navigate their diets. Includes an A.I. chatbot that creates custom recipes catered to the user's needs. This was my capstone project at Atlas School.</p>
         </div>
         <div className="project" onClick={() => window.open('https://www.nostalgiafy.store/')}>
           <img src={`${process.env.PUBLIC_URL}/images/nostalgiafy.png`} alt="Project Two" />
@@ -37,7 +37,7 @@ const Projects = () => {
         <div className="project" onClick={() => window.open('https://puzzleemptym.github.io/atlas-smiling-school-javascript/')}>
           <img src={`${process.env.PUBLIC_URL}/images/smiling.png`} alt="Project Six" />
           <h3>Atlas Smiling School</h3>
-          <p>These group of web pages were coded with the help of the Bootstrap Framework and based on some design models given on Figma.</p>
+          <p>This group of web pages was coded with the Bootstrap Framework and based on some design models given on Figma. The goal of this project was to learn the basics of multi-page websites and Bootstrap CSS.</p>
         </div>
       </div>
     </section>
