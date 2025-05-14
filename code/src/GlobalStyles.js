@@ -243,7 +243,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 15px 30px;
     border: none;
     border-radius: 5px;
-    background-color: #d100cc; /* Solid pink color */
+    background-color:rgb(151, 220, 250); /* Solid pink color */
     color: #black; /* White text for contrast */
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
@@ -251,7 +251,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .home-buttons button:hover {
-    transform: scale(1.20); /* Slight zoom on hover */
+    transform: scale(1.1);
+    background-color:rgb(243, 149, 241);
   }
 
   @media (max-width: 1024px) {
@@ -435,79 +436,76 @@ const GlobalStyle = createGlobalStyle`
   /* ---------- SKILLS STYLES ----------- */
   /* ------------------------------------ */
 
-  #skills {
-    text-align: center;
-    padding: 60px 20px;
-  }
+.skills-section {
+  padding: 3rem 1rem;
+  text-align: center;
+}
 
+.skills-title {
+  color: White;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+@media (min-width: 1024px) {
   .skills-grid {
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 15px; /* Adjust gap between items */
-    margin-top: 20px;
   }
+}
 
-  .skill-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    background: #00e5ff; /* Blue background */
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    transition: transform 0.3s, box-shadow 0.3s;
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  animation-name: float;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.skill-icon {
+  font-size: 2.5rem;
+  color: #b0e0ff;
+  margin-bottom: 0.4rem;
+  transition: transform 0.3s;
+}
+
+.skill-name {
+  color: #00e5ff;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+@media (min-width: 1024px) {
+  .skill-item {
+    padding: 1.5rem;
   }
-
-  .skill-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+  .skill-icon {
+    font-size: 4rem;    /* original desktop size */
   }
-
-  .skill-logo {
-    width: 60px; /* Consistent logo size */
-    height: 60px;
-    margin-bottom: 8px;
-    fill: #ffffff; /* Change SVG color to white if needed */
+  .skill-name {
+    font-size: 1.2rem;  /* original desktop size */
   }
+}
 
-  .skill-card p {
-    font-size: 1rem;
-    color: #0f0f0f; /* Dark text for contrast with the blue background */
-    font-weight: bold; /* Make text bold */
-    margin: 0;
-  }
+@keyframes float {
+  0%   { transform: translate(0px,   0px  ); }
+  25%  { transform: translate(3px,  -5px  ); }
+  50%  { transform: translate(-3px,  2px  ); }
+  75%  { transform: translate(2px,   4px  ); }
+  100% { transform: translate(0px,   0px  ); }
+}
 
-  /* Responsive Layout */
-  @media (max-width: 1200px) {
-    .skills-grid {
-      grid-template-columns: repeat(4, 1fr); /* 4 items per row on medium-large screens */
-    }
-  }
+.skill-icon:hover {
+  transform: scale(1.1);
+}
 
-  @media (max-width: 768px) {
-    .skills-grid {
-      grid-template-columns: repeat(3, 1fr); /* 3 items per row on tablets */
-    }
-  }
-
-  @media (max-width: 480px) {
-    .skills-grid {
-      grid-template-columns: repeat(3, 1fr); /* Maintain 3 items per row on small screens */
-    }
-
-    .skill-card {
-      padding: 8px; /* Compact padding for smaller screens */
-    }
-
-    .skill-logo {
-      width: 50px; /* Smaller logos for small screens */
-      height: 50px;
-    }
-
-    .skill-card p {
-      font-size: 0.9rem; /* Smaller text size */
-    }
-  }
 
   /* ------------------------------------ */
   /* ---------- CONTACT STYLES ----------- */
@@ -597,13 +595,12 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .social-links a {
-  margin-right: 10px;
   font-size: 3em; 
   transition: transform 0.3s;
   }
 
   .social-links a:hover {
-    transform: scale(1.2); 
+    transform: scale(1.1);
   }
 
   /* ------------------------------------ */

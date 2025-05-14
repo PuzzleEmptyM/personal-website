@@ -7,31 +7,43 @@ const Resume = () => {
   return (
     <section id="resume" ref={ref} className={isVisible ? 'section-visible' : ''}>
       <h2>Resume</h2>
-      <p>Download my <a href="https://drive.google.com/file/d/1qaZLtY4LiR_A5jDQELbc1tLI7NDDdNXk/view?usp=drive_link" target="_blank" rel="noopener noreferrer">resume</a>.</p>
+      <p>Download my <a href="https://drive.google.com/file/d/11CjgmN-5o5gut8IpRKcg2tYUg66jGWuo/view?usp=drive_link" target="_blank" rel="noopener noreferrer">resume</a>.</p>
+      <br></br>
+      <br></br>
+
+      <p><strong>IT and Data Assistant</strong></p>
+      <p>Moserhaus Consulting, December 2024 - Present</p>
+      <br></br>
+      <p>
+      ● Develop and implement VBA and Power Query solutions to automate Security Assessment processes in Excel <br></br>
+      ● Enhance efficiency in data validation and reporting, ensuring accuracy and compliance with industry standards <br></br>
+      ● Collaborate and communicate with the team lead to optimize secure, scalable data management practices <br></br>
+      </p>
+      <br></br>
+      <br></br>
+      <br></br>
+
+      <p><strong>Coder - AI Training</strong></p>
+      <p>Scale AI, Jan 2024 - Present</p>
+      <br></br>
+      <p>
+      ● Leverage expertise in HTML5, JavaScript, and additional programming languages <br></br>
+      ● Evaluate and enhance the quality of AI-generated code <br></br>
+      ● Develop, test, and optimize code for maximum efficiency <br></br>
+        </p>
+      <br></br>
       <br></br>
       <br></br>
 
       <p><strong>Marketing Manager</strong></p>
       <p>Samuel Claus, Jan 2021 - Present</p>
       <br></br>
-      <p>Manager, Marketer and Designer of samuelclaus.com. Job consists in: <br></br>
-        - Contacting potential customers <br></br>
-        - Reaching out to local art events <br></br>
-        - Constantly updating the website <br></br>
-        - Upkeep for Yelp and Google business pages <br></br>
-        - Accompanying Samuel at every art event to help manage sales <br></br>
-        - Strategizing for constant improvement of our services</p>
-      <br></br>
-      <p><strong>Coder - AI Training</strong></p>
-      <p>Scale AI, Jan 2024 - Present</p>
-      <br></br>
       <p>
-        - Evaluating the quality of AI-generated code<br></br>
-        - Writing functional and efficient code<br></br>
-        - Optimizing code to run at maximum efficiency<br></br>
-        - Writing robust test cases to confirm code works efficiently<br></br>
-        - Writing human-readable summaries of coding problems<br></br>
-        - Writing explanations of how code can solve problems</p>
+      ● Manage the operations, marketing strategies, and personal website for local art business <br></br>
+      ● Engage with potential customers, organize participation in art events <br></br>
+      ● Refine online presence for maximum impact, manage Google Business listing <br></br>
+      </p>
+      <br></br>
     </section>
   );
 };
