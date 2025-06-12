@@ -7,7 +7,7 @@ const Resume = () => {
   return (
     <section id="resume" ref={ref} className={isVisible ? 'section-visible' : ''}>
       <h2>Resume</h2>
-      <p>Download my <a href="https://drive.google.com/file/d/11CjgmN-5o5gut8IpRKcg2tYUg66jGWuo/view?usp=drive_link" target="_blank" rel="noopener noreferrer">resume</a>.</p>
+      <p>Download my <a href="https://drive.google.com/file/d/1HP7dkbCVbItosAgb9tdhR1BFYAgpIDzt/view?usp=drive_link" target="_blank" rel="noopener noreferrer">resume</a>.</p>
       <br></br>
       <br></br>
 
